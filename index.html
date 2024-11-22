@@ -17,7 +17,7 @@
 	<title>Portfolio Gontier Clément</title>
 
 	<!-- For favicon png -->
-	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+	<link rel="shortcut icon" type="image/icon" href="assets/images/faviconGC.png" />
 
 	<!--font-awesome.min.css-->
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -106,7 +106,7 @@
 				<div class="col-md-12 text-center">
 					<div class="header-text">
 						<h2>Bonjour <span>,</span> Je m'appelle Clément Gontier <span>.</span> </h2>
-						<p>Étudiant en 2ème année de BTS SIO option SLAM</table>
+						<p>Étudiant en 2 ème année de BTS SIO option SLAM</table>
 						</p>
 						<!--<a href="assets/download/browney.txt" download>download resume</a>-->
 					</div><!--/.header-text-->
@@ -156,6 +156,7 @@
 								</div>
 								<div class="col-sm-2">
 									<div class="single-about-add-info-CV">
+										<br>
 										<button
 											onclick="window.open('assets/images/CV-Stage-Clément-Gontier.pdf', '_blank')">Mon
 											CV</button>
@@ -170,17 +171,18 @@
 							<div class="about-list-icon">
 								<ul>
 									<li>
-										<a href="#">
-											<i class="fa fa-github" aria-hidden="true"></i>
-										</a>
-									</li><!-- / li -->
-									<li>
-										<a href="#">
+										<a href="https://fr.linkedin.com/in/cl%C3%A9ment-gontier?trk=people-guest_people_search-card"
+											target="_blank">
 											<i class="fa fa-linkedin" aria-hidden="true"></i>
 										</a>
 									</li><!-- / li -->
 									<li>
-										<a href="#">
+										<a href="https://github.com/ClementGontier" target="_blank">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</a>
+									</li><!-- / li -->
+									<li>
+										<a href="https://www.instagram.com/clement_gntr/" target="_blank">
 											<i class="fa fa-instagram" aria-hidden="true"></i>
 										</a>
 									</li><!-- / li -->
@@ -236,7 +238,14 @@
 											<br><br>
 											Poursuite d’études : Licence professionnelle, écoles d’ingénieurs, masters
 											spécialisés en informatique.
+
 										</p>
+
+										<form
+											action="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux"
+											method="get" target="_blank">
+											<button type="submit">Détails</button>
+										</form>
 									</div>
 								</div>
 								<div class="col-sm-6">
@@ -248,14 +257,19 @@
 											Compétences acquises : Développement d’applications, gestion de bases de
 											données, analyse des besoins des utilisateurs, conception de solutions
 											logicielles, maintenance et évolution des applications.
-											<br><br><br>
+											<br><br>
 											Débouchés :<br>
 											SLAM : Développeur d’applications, analyste programmeur, technicien de
 											maintenance logicielle, intégrateur de solutions logicielles.
-											<br><br>
+											<br><br><br>
 											Poursuite d’études : Licence professionnelle, écoles d’ingénieurs, masters
 											spécialisés en informatique.
 										</p>
+										<form
+											action="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+											method="get" target="_blank">
+											<button type="submit">Détails</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -420,42 +434,67 @@
 						<div class="row">
 							<div class="col-sm-3">
 								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-themeforest"></i></a>
-										<div class="profile-icon-name">ANSSI</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><iframe src="assets/images/Certifications/Certification_ANSSI_MOOC_CYBER_Clément_Gontier.pdf"></iframe></i></a>
-											
+
+									<img src="assets/images/Anssi.jpeg" alt="Certificat 1" class="certification-img"
+										id="cert1">
+
+									<!-- Fenêtre modale -->
+
+									<div class="modal1" id="modal">
+										<button class="close1-modal" id="closeModal">&times;</button>
+										<div class="modal1-content">
+											<iframe src="" id="pdfViewer"></iframe>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-themeforest"></i></a>
-										<div class="profile-icon-name">CNIL Atelier RGPD</div>
+									<div class="pdf-list">
+										<img src="assets/images/ClementGontier.jpg" alt="PDF 1" class="pdf-thumbnail"
+											data-pdf="assets/images/Certifications/attestation_CNIL_m1.pdf">
+										<img src="assets/images/pageaccueil.png" alt="PDF 1" class="pdf-thumbnail"
+											data-pdf="assets/images/Certifications/attestation_CNIL_m2.pdf">
+
 									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-themeforest"></i></a>
-											<div class="profile-icon-name">CNIL Atelier RGPD</div>
+									<!-- Fenêtre modale -->
+									<div class="modal1" id="modal1">
+										<button class="close1-modal" id="closeModal">&times;</button>
+										<div class="modal1-content">
+											<iframe src="" id="pdfViewer"></iframe>
 										</div>
 									</div>
+
+									<!-- <img src="assets/images/cnil.png" alt="Cliquez pour ouvrir"
+										class="open-modal-img">
+
+									
+									<div class="modal" id="pdfModal">
+										<div class="modal-content">
+											<h2>Liste de PDF</h2>
+											<ul class="pdf-list">
+												<li><a href="assets/images/Certifications/attestation_CNIL_m1.pdf" target="_blank">Attestation MOOC 1</a></li>
+												<li><a href="assets/images/Certifications/attestation_CNIL_m2.pdf" target="_blank">Attestation MOOC 2</a></li>
+												<li><a href="assets/images/Certifications/attestation_CNIL_m3.pdf" target="_blank">Attestation MOOC 3</a></li>
+												<li><a href="assets/images/Certifications/attestation_CNIL_m4.pdf" target="_blank">Attestation MOOC 4</a></li>
+												<li><a href="assets/images/Certifications/attestation_CNIL_m5.pdf" target="_blank">Attestation MOOC 5</a></li>
+											</ul>
+											<button class="close-modal-btn">Fermer</button>
+										</div>
+									</div> -->
 								</div>
+
 							</div>
+
 							<div class="col-sm-3">
 								<div class="single-profile">
-									<div class="profile-txt">
-										<a href=""><i class="flaticon-dribbble"></i></a>
-										<div class="profile-icon-name">MOOC OpenClassrooms</div>
-									</div>
-									<div class="single-profile-overlay">
-										<div class="profile-txt">
-											<a href=""><i class="flaticon-dribbble"></i></a>
-											<div class="profile-icon-name">MOOC OpenClassrooms</div>
+									<img src="assets/images/OpenClassrooms.png" alt="Certificat 1"
+										class="certification-img" id="cert1">
+
+									<div class="modal1" id="modal">
+										<button class="close1-modal" id="closeModal">&times;</button>
+										<div class="modal1-content">
+											<iframe src="" id="pdfViewer"></iframe>
 										</div>
 									</div>
 								</div>
@@ -564,9 +603,9 @@
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
 								</div>
-							
+
 								<h2>2 ème année</h2>
-								
+
 								<div class="col-sm-4">
 									<div class="item">
 										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image" />
@@ -719,9 +758,12 @@
 							</div><!--/.contact-adress-->
 							<div class="hm-foot-icon">
 								<ul>
-									<li><a href="#"><i class="fa fa-github"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
+									<li><a href="https://fr.linkedin.com/in/cl%C3%A9ment-gontier?trk=people-guest_people_search-card"
+											target="_blank"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+									<li><a href="https://github.com/ClementGontier" target="_blank"><i
+												class="fa fa-github"></i></a></li>
+									<li><a href="https://www.instagram.com/clement_gntr/" target="_blank"><i
+												class="fa fa-instagram"></i></a></li><!--/li-->
 								</ul><!--/ul-->
 							</div><!--/.hm-foot-icon-->
 						</div><!--/.single-contact-box-->
@@ -789,6 +831,7 @@
 
 	<!--Custom JS-->
 	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/modal.js"> </script>
 
 </body>
 
